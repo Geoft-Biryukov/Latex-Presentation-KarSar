@@ -13,9 +13,12 @@
 \documentclass{beamer}
 
 \usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}     
+\usepackage[russian]{babel}  
 
-\usepackage[T2A]{fontenc}      %% 2
-\usepackage[russian]{babel}    %% 3
+\usepackage{graphicx} 
+
+
 
 % Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
 %
@@ -174,55 +177,54 @@
 	\end{itemize}
 \item \textbf{Электрические методы ГИС}
 	\begin{itemize}
-	\item Боковой каротаж
-	\item Микробоковой каротаж
+	\item Боковой каротаж (БК)
+	\item Микробоковой каротаж (МБК)
 	\item Многозондовый боковой каротаж (5БК)
 	\item Многозондовый индукционный каротаж (5ИК, 6ИК) 
 	\end{itemize}
 \item \textbf{Акустические методы ГИС}
 	\begin{itemize}
-	\item Трёх элементный зонд (АК73)
+	\item Трёхэлементный зонд (АК73)
 	\item Акустический телевизор
 	\item Шумомер спектральный 
 	\end{itemize}	
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
-
-  You can create overlays\dots
-  \begin{itemize}
-  \item using the \texttt{pause} command:
-    \begin{itemize}
-    \item
-      First item.
-      \pause
-    \item    
-      Second item.
-    \end{itemize}
-  \item
-    using overlay specifications:
-    \begin{itemize}
-    \item<3->
-      First item.
-    \item<4->
-      Second item.
-    \end{itemize}
-  \item
-    using the general \texttt{uncover} command:
-    \begin{itemize}
-      \uncover<5->{\item
-        First item.}
-      \uncover<6->{\item
-        Second item.}
-    \end{itemize}
-  \end{itemize}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+{\small В состав прибора КарСар МС входят: модуль датчика натяжения и вращения, центратор, модуль ГК, модуль памяти и непрерывного инклинометра, позволяющего правильно ориентировать   в  пространстве,    полученную   информацию модуль сканера}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8\textwidth, angle=0]{./Images/Схема МС3.jpg}
+		\caption{Электрический микросканер МС-А}
+	\end{figure} 
 \end{frame}
 
-
-\subsection{Previous Work}
-
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{itemize}
+ \item \textbf{Регистратор}
+	\begin{itemize}
+	\item Калибровка радиусов (рычагов)
+	\item Калибровка сопротивлений (электродов)
+	\item Калибровка инклинометра
+	\item Регистрация данных в память прибора
+	\item Привязка данных к глубине (репроцессинг)
+	\item Применение калибровочных коэффициентов
+	\end{itemize}
+\item \textbf{Интерпретатор (предварительная обработка данных)}
+	\begin{itemize}
+	\item 1
+	\item  2
+	\item 3
+	\item 4
+	\end{itemize}
+\item \textbf{Интерпретатор (интерпретация данных)}
+	\begin{itemize}
+	\item Трёхэлементный зонд (АК73)
+	\item Акустический телевизор
+	\item Шумомер спектральный 
+	\end{itemize}	
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Make Titles Informative.}
