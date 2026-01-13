@@ -13,9 +13,12 @@
 \documentclass{beamer}
 
 \usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}     
+\usepackage[russian]{babel}  
 
-\usepackage[T2A]{fontenc}      %% 2
-\usepackage[russian]{babel}    %% 3
+\usepackage{graphicx} 
+
+
 
 % Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
 %
@@ -79,7 +82,7 @@
 % - Not really informative to the audience, more for people (including
 %   yourself) who are reading the slides online
 
-\subject{Theoretical Computer Science}
+\subject{Геофизическое исследование скважин (ГИС)}
 % This is only inserted into the PDF information catalog. Can be left
 % out. 
 
@@ -96,12 +99,12 @@
 
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each subsection:
-\AtBeginSubsection[]
-{
-  \begin{frame}<beamer>{Outline}
-    \tableofcontents[currentsection,currentsubsection]
-  \end{frame}
-}
+%\AtBeginSubsection[]
+%{
+%\begin{frame}<beamer>{Оптимус}
+%   \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
 
 
 % If you wish to uncover everything in a step-wise fashion, uncomment
@@ -116,9 +119,24 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents
+\begin{frame}{Методы ГИС}
+  %\tableofcontents
   % You might wish to add the option [pausesections]
+\begin{itemize}
+\item \textbf{Стадартные методы ГИС}
+	\begin{itemize}
+	\item Инклинометрия
+	\item Радиоактивные методы (активные/пассивные)
+	\item Элктрические методы
+	\item Акустические методы
+	\end{itemize}
+\item \textbf{Специальные методы ГИС}
+	\begin{itemize}
+	\item Электрический микросканер
+	\item Акустический кроссдипольный каротаж
+	\item Ядерно-магнитный каротаж
+	\end{itemize}
+\end{itemize}
 \end{frame}
 
 
@@ -139,57 +157,74 @@
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
 
-\section{Motivation}
 
-\subsection{The Basic Problem That We Studied}
 
-\begin{frame}{Make Titles Informative. Use Uppercase Letters.}{Subtitles are optional.}
+%\section{Стандартные методы ГИС}
+
+%\subsection{Радиоактивный каротаж (активный/пассивный)}
+%\subsection{Электрические методы}
+%\subsection{Акустические методы.}
+
+\begin{frame}{Стандартные методы ГИС}
   % - A title should summarize the slide in an understandable fashion
   %   for anyone how does not follow everything on the slide itself.
-
-  \begin{itemize}
-  \item
-    Use \texttt{itemize} a lot.
-  \item
-    Use very short sentences or short phrases.
-  \end{itemize}
+\begin{itemize}
+ \item \textbf{Радиоактивные методы ГИС}
+	\begin{itemize}
+	\item Спектрометрический гамма каротаж (СГК)
+	\item Литоплотностной каротаж (ЛК)
+	\item Импульсно-нейтронный каротаж (АИНК)
+	\end{itemize}
+\item \textbf{Электрические методы ГИС}
+	\begin{itemize}
+	\item Боковой каротаж (БК)
+	\item Микробоковой каротаж (МБК)
+	\item Многозондовый боковой каротаж (5БК)
+	\item Многозондовый индукционный каротаж (5ИК, 6ИК) 
+	\end{itemize}
+\item \textbf{Акустические методы ГИС}
+	\begin{itemize}
+	\item Трёхэлементный зонд (АК73)
+	\item Акустический телевизор
+	\item Шумомер спектральный 
+	\end{itemize}	
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
-
-  You can create overlays\dots
-  \begin{itemize}
-  \item using the \texttt{pause} command:
-    \begin{itemize}
-    \item
-      First item.
-      \pause
-    \item    
-      Second item.
-    \end{itemize}
-  \item
-    using overlay specifications:
-    \begin{itemize}
-    \item<3->
-      First item.
-    \item<4->
-      Second item.
-    \end{itemize}
-  \item
-    using the general \texttt{uncover} command:
-    \begin{itemize}
-      \uncover<5->{\item
-        First item.}
-      \uncover<6->{\item
-        Second item.}
-    \end{itemize}
-  \end{itemize}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+{\small В состав прибора КарСар МС входят: модуль датчика натяжения и вращения, центратор, модуль ГК, модуль памяти и непрерывного инклинометра, позволяющего правильно ориентировать   в  пространстве,    полученную   информацию модуль сканера}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8\textwidth, angle=0]{./Images/Схема МС3.jpg}
+		\caption{Электрический микросканер МС-А}
+	\end{figure} 
 \end{frame}
 
-
-\subsection{Previous Work}
-
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{itemize}
+ \item \textbf{Регистратор}
+	\begin{itemize}
+	\item Калибровка радиусов (рычагов)
+	\item Калибровка сопротивлений (электродов)
+	\item Калибровка инклинометра
+	\item Регистрация данных в память прибора
+	\item Привязка данных к глубине (репроцессинг)
+	\item Применение калибровочных коэффициентов
+	\end{itemize}
+\item \textbf{Интерпретатор (предварительная обработка данных)}
+	\begin{itemize}
+	\item 1
+	\item  2
+	\item 3
+	\item 4
+	\end{itemize}
+\item \textbf{Интерпретатор (интерпретация данных)}
+	\begin{itemize}
+	\item Трёхэлементный зонд (АК73)
+	\item Акустический телевизор
+	\item Шумомер спектральный 
+	\end{itemize}	
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Make Titles Informative.}
