@@ -195,7 +195,7 @@
 {\small В состав прибора КарСар МС входят: модуль датчика натяжения и вращения, центратор, модуль ГК, модуль памяти и непрерывного инклинометра, позволяющего правильно ориентировать   в  пространстве,    полученную   информацию модуль сканера}
 	\begin{figure}[h!] 
 		\centering
-		\includegraphics[width=0.8\textwidth, angle=0]{./Images/Схема МС3.jpg}
+		\includegraphics[width=0.8\textwidth, angle=0]{./Images/microscanner_view.jpg}
 		\caption{Электрический микросканер МС-А}
 	\end{figure} 
 \end{frame}
@@ -205,18 +205,45 @@
  \item \textbf{Регистратор}
 	\begin{itemize}
 	\item Калибровка радиусов (рычагов)
+	\item Калибровка потенциала
 	\item Калибровка сопротивлений (электродов)
 	\item Калибровка инклинометра
 	\item Регистрация данных в память прибора
 	\item Привязка данных к глубине (репроцессинг)
 	\item Применение калибровочных коэффициентов
 	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.9 \textwidth, angle=0]{./Images/microscanner_calibration.jpg}
+		\caption{Калибровка электрического микросканера}
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.7 \textwidth, angle=0]{./Images/microscanner_reprocessing.jpg}
+		\caption{Репроцессинг электрического микросканера}
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{itemize}
 \item \textbf{Интерпретатор (предварительная обработка данных)}
 	\begin{itemize}
-	\item 1
-	\item  2
-	\item 3
-	\item 4
+	\item Коррекция за неравномерное движение прибора
+	\item Коррекция за отсутствие данных на отдельных электродах
+	\item Коррекция за эксцентриситет
+	\item Эквализация данных
+	\item Сцепление и ориентация башмаков
+	\item Построение статического и динамического имиджа
+	\item Фильтрация имиджа 
+	\item Калибровка имджа по данным МБК
+	\item Восстановление имиджа
 	\end{itemize}
 \item \textbf{Интерпретатор (интерпретация данных)}
 	\begin{itemize}
