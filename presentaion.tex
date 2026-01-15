@@ -19,7 +19,6 @@
 \usepackage{graphicx} 
 
 
-
 % Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
 %
 % In principle, this file can be redistributed and/or modified under
@@ -56,7 +55,7 @@
 
 
 \title[Программный комплекс Оптимус] % (optional, use only with long paper titles)
-{Некоторые проекты компании ООО КАРСАР}
+{Некоторые проекты группы компаний КАРСАР}
 
 \subtitle
 {2012 - 2025}
@@ -70,7 +69,7 @@
 \institute[ООО КАРСАР] % (optional, but mostly needed)
 {
   Ведущий инженер-программист\\
-  Начальник отдела программирования ООО КАРСАР\\
+  начальник отдела программирования ООО КАРСАР\\
   кандидат физико-математических наук
 }
 % - Use the \inst command only if there are several affiliations.
@@ -119,15 +118,19 @@
   \titlepage
 \end{frame}
 
+%\begin{frame}
+%Презентация содержит некоторые проекты, в которых я принимал в период с 2012 по 2025 годы. Большая часть задач была %решена  непосредственно мной как математиком, инженером, программистом. Некоторые задачи я решал совместно с %коллегами. 
+%\end{frame}
+
 \begin{frame}{Методы ГИС}
   %\tableofcontents
   % You might wish to add the option [pausesections]
 \begin{itemize}
-\item \textbf{Стадартные методы ГИС}
+\item \textbf{Стандартные методы ГИС}
 	\begin{itemize}
 	\item Инклинометрия
 	\item Радиоактивные методы (активные/пассивные)
-	\item Элктрические методы
+	\item Электрические методы
 	\item Акустические методы
 	\end{itemize}
 \item \textbf{Специальные методы ГИС}
@@ -159,12 +162,6 @@
 
 
 
-%\section{Стандартные методы ГИС}
-
-%\subsection{Радиоактивный каротаж (активный/пассивный)}
-%\subsection{Электрические методы}
-%\subsection{Акустические методы.}
-
 \begin{frame}{Стандартные методы ГИС}
   % - A title should summarize the slide in an understandable fashion
   %   for anyone how does not follow everything on the slide itself.
@@ -192,11 +189,53 @@
 \end{frame}
 
 \begin{frame}{Специальные методы ГИС}{Электрический микросканер}
-{\small В состав прибора КарСар МС входят: модуль датчика натяжения и вращения, центратор, модуль ГК, модуль памяти и непрерывного инклинометра, позволяющего правильно ориентировать   в  пространстве,    полученную   информацию модуль сканера}
+{
+\centering
+\huge
+\textbf{ Электрический микросканер}
+}
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+Предназначен для получения изображения стенки скважины методом  электрических сопротивлений с целью определения:
+\begin{itemize}
+	\item угла наклона и азимута падения пластов; 
+	\item расположения трещин, их наклона и направления;
+	\item параметров трещин;
+	\item структуры осадочных пород;
+	\item исследования тонкослоистых структур; 
+	\item механических свойств ствола скважин;
+	\item профиля скважины;
+	\item разделение пористости на первичную и вторичную компоненты.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+Данные электрического микросканера могут быть использованы для определения: 
+\begin{itemize}
+	\item обстановки осадконакопления; 
+	\item тектонических условий формирования горных пород;
+	\item их структурных и текстурных особенностей; 
+	\item для стратиграфической корреляции;
+	\item для уточнения геомеханической модели среды;
+	\item в качестве дополнения к данным, получаемым в результате исследования керна.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+{\small В состав прибора КарСар МС входят: модуль датчика натяжения и вращения, центратор, модуль ГК, модуль памяти и непрерывного инклинометра, позволяющего правильно ориентировать   в  пространстве,    полученную   информацию, модуль сканера}
 	\begin{figure}[h!] 
 		\centering
-		\includegraphics[width=0.8\textwidth, angle=0]{./Images/Схема МС3.jpg}
+		\includegraphics[width=0.8\textwidth, angle=0]{./Images/microscanner_view.jpg}
 		\caption{Электрический микросканер МС-А}
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8 \textwidth, angle=0]{./Images/microscanner_pad.jpg}
+		\caption{Башмак электрического микросканера}
 	\end{figure} 
 \end{frame}
 
@@ -205,119 +244,170 @@
  \item \textbf{Регистратор}
 	\begin{itemize}
 	\item Калибровка радиусов (рычагов)
+	\item Калибровка потенциала
 	\item Калибровка сопротивлений (электродов)
 	\item Калибровка инклинометра
 	\item Регистрация данных в память прибора
 	\item Привязка данных к глубине (репроцессинг)
 	\item Применение калибровочных коэффициентов
 	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.9 \textwidth, angle=0]{./Images/microscanner_calibration.jpg}
+		\caption{Калибровка электрического микросканера}
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.7 \textwidth, angle=0]{./Images/microscanner_reprocessing.jpg}
+		\caption{Репроцессинг электрического микросканера}
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{itemize}
 \item \textbf{Интерпретатор (предварительная обработка данных)}
 	\begin{itemize}
-	\item 1
-	\item  2
-	\item 3
-	\item 4
+	\item Коррекция за неравномерное движение прибора
+	\item Коррекция за отсутствие данных на отдельных электродах
+	\item Коррекция за эксцентриситет
+	\item Эквализация данных
+	\item Сцепление и ориентация башмаков
+	\item Построение статического и динамического имиджа
+	\item Фильтрация имиджа 
+	\item Калибровка имиджа по данным МБК
+	\item Восстановление имиджа
 	\end{itemize}
 \item \textbf{Интерпретатор (интерпретация данных)}
 	\begin{itemize}
-	\item Трёхэлементный зонд (АК73)
-	\item Акустический телевизор
-	\item Шумомер спектральный 
+	\item Выделение геологических объектов
+	\item Классификация геологических объектов
+	\item Расчет вторичной пористости
+	\item Анализ вывалов скважины
 	\end{itemize}	
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8 \textwidth, angle=0]{./Images/microscanner_image1.jpg}
+		\caption{Пример имиджа электрического микросканера}
+	\end{figure} 
 \end{frame}
 
-
-
-\section{Our Results/Contribution}
-
-\subsection{Main Results}
-
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8 \textwidth, angle=0]{./Images/microscanner_image2.jpg}
+		\caption{Пример восстановленного имиджа}
+	\end{figure} 
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Электрический микросканер}
+\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.8 \textwidth, angle=0]{./Images/microscanner_image3.jpg}
+		\caption{Пример планшета}
+	\end{figure} 
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+\centering
+\huge
+\textbf{Кроссдипольный акустический каротаж}
 \end{frame}
 
-
-\subsection{Basic Ideas for Proofs/Implementation}
-
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+\textbf{Решаемые задачи:}
+\begin{itemize}
+	\item Литологическое расчленение разреза
+	\item Определение коэффициента и типа пористости пород
+	\item Выделение проницаемых пластов
+	\item Расчёт модулей упругости горных пород
+	\item Расчет направления анизотропии по данным кросс-дипольного зонда
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+\textbf{Основные характеритики:}
+\begin{itemize}
+	\item Восемь приемных станций обеспечивают максимальную точность расчетов по сравнению с  аппаратурой двухканальной, типа АВАК, МАК и т.п.
+	\item Низкая частота работы дипольного излучателя (1.8 кГц) позволяет надежно определять параметры поперечных волн без коррекции за дисперсию скоростей
+	\item Диаметр прибора 73мм позволяет работать в скважинах малого диаметра (от 95мм) и через буровой инструмент
+	\item Работа на трёхжильном геофизическом кабеле	
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+В состав прибора входят:
+\begin{itemize}
+	\item Модуль приемников: восемь 4-х канальных станций обеспечивают регистрацию волновых пакетов
+	\item Модуль излучателей: монопольный и два кросс-дипольных излучателя
+\end{itemize}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=1.0 \textwidth, angle=0]{./Images/crossdipole_view.jpg}
+		\caption{Общий вид прибора КарСар 8АД }
+	\end{figure} 
 \end{frame}
 
-
-
-\section*{Summary}
-
-\begin{frame}{Summary}
-
-  % Keep the summary *very short*.
-  \begin{itemize}
-  \item
-    The \alert{first main message} of your talk in one or two lines.
-  \item
-    The \alert{second main message} of your talk in one or two lines.
-  \item
-    Perhaps a \alert{third message}, but not more than that.
-  \end{itemize}
-  
-  % The following outlook is optional.
-  \vskip0pt plus.5fill
-  \begin{itemize}
-  \item
-    Outlook
-    \begin{itemize}
-    \item
-      Something you haven't solved.
-    \item
-      Something else you haven't solved.
-    \end{itemize}
-  \end{itemize}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+\textbf{Этапы обработки:}
+\begin{itemize}
+	\item Репроцессинг данных из памяти прибора	
+	\item Привязка данных к глубине
+	\item Вычисление интервального времени продольной волны, поперечной волны и волны Стоунли	
+	\item Получение скоростей быстрой и медленной поперечной волны
+	\item Определение акустической анизотропии и ее азимутальной ориентации
+	\item Определение скорости  быстрой  и  медленной  поперечных  волн и ориентации их  векторов
+\end{itemize}
 \end{frame}
 
-
-
-% All of the following is optional and typically not needed. 
-\appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{For Further Reading}
-
-\begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=1.0 \textwidth, angle=0]{./Images/crossdipole_summary.jpg}
+		\caption{Общий вид планшета с результатами обработки }
+	\end{figure} 
 \end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.4 \textwidth, angle=0]{./Images/crossdipole_stc.jpg}
+		\caption{ Результат обработки STC }
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.5 \textwidth, angle=0]{./Images/crossdipole_anisothropy.jpg}
+		\caption{ Направление анизотропии }
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Кроссдипольный акустический каротаж}
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=1.0 \textwidth, angle=0]{./Images/crossdipole_disperssion.jpg}
+		\caption{ Карта дисперсии }
+	\end{figure} 
+\end{frame}
+
+\begin{frame}{Специальные методы ГИС}{Ядерно-магнитный каротаж}
+\centering
+\huge
+\textbf{Ядерно-магнитный каротаж}
+\end{frame}
+
 
 \end{document}
 
